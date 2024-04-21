@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+      margin: 0;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      transition: 0.5s;
+    
+    }
+    .Main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 414px;
+        height: 800px;
+        background-color: #cbe0db;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 10%;
+        width: 90%;
+    }
+    .Title{
+        font-size: 18px ;
+        font-weight: 500px;
+        color: #ffff;
+    }
+    
+    .containerbackIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+    .backicon{
+        background-image: url("./MEDIA/images/1-search/chevron-left.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .containerburg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+    }
+    .burger{
+        background-image: url("./MEDIA/images/1-search/menu-open.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .ConatinerInput{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+    
+    }
+    .iconseach{
+        background-image: url("./MEDIA/images/1-search/search.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 40px;
+    }
+    .searchinput{
+        width: 70%;
+        padding: 10px 40px;
+        font-size: 18px;
+        border-radius: 20px;
+        height: 20px;
+    }
+    .ConatinerOP{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 10%;
+
+    }
+    .ButtonDogs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 40px;
+        background-color: #519e8a;
+        width: 40%;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    .ButtonCat{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 40px;
+        background-color: #ffff;
+        width: 40%;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    .iconDog{
+        background-image: url("./MEDIA/images/1-search/fa-solid_dog_white.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+
+    }
+    .iconcat{
+        background-image: url("./MEDIA/images/1-search/fa-solid_cat.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+
+    }
+    .textdog{
+        color: #ffff;
+        font-size: 18px;
+        font-weight: 500px;
+    }
+    .textcat{
+        color: #2c4672;
+        font-size: 18px;
+        font-weight: 500px;
+    }
+    .ContainerDogs{
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 10px;
+    }
+    .cardDog{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #519e8a;
+        height: 250px;
+        width: 180px;
+    }
+    .ContainerImagem{
+        width: 100%;
+        height: 70%;
+    }
+    .Dog1{
+        background-image: url("./MEDIA/images/1-search/dogs/alvan.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 100%;
+    }
+    .ConatinerInfo{
+        display: flex;
+        flex-direction: row;
+        background-color: #ffff;
+        width: 100%;
+        height: 30%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .Info{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        width: 50%;
+    }
+    .Title{
+        font-weight: bold;
+        font-size: 24px;
+        color: #2c4672;
+    }
+    .Sub-Title{
+        font-size: 14px;
+        color: #2c4672;
+    }
+    .conatinerIcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+    }
+    .IconSolid{
+        background-image: url("./MEDIA/images/1-search/hearthome-active.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+
+    }
