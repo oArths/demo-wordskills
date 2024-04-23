@@ -1,12 +1,39 @@
+@font-face {
+    font-family: "Bold";
+    src: url("../MEDIA/fonts/Montserrat-Bold.ttf");
+  }
+@font-face {
+    font-family: "Medium";
+    src: url("../MEDIA/fonts/Montserrat-Medium.ttf");
+  }
+@font-face {
+    font-family: "Regular";
+    src: url("../MEDIA/fonts/Montserrat-Regular.ttf");
+  }
+
+
+  :root{
+    --title-blue: #2c4674;
+    --title-white: #ffffff;
+    --home-blue: #2c4674;
+    --home-whiteblue: #c8daff;
+    --search-green: #519e8a;
+    --search-orange: #d1723f;
+    --search-backgreen: #cbe0db;
+    --search-backwhite: #e8dbd4;
+
+  }
 *{
+    font-family: "Regular";
     padding: 0;
-      margin: 0;
-      text-decoration: none;
-      outline: none;
-      border: none;
-      transition: 0.5s;
-    
-    }
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+ 
+
+}
     .Main{
         display: flex;
         justify-content: center;
@@ -18,7 +45,7 @@
         align-items: center;
         width: 414px;
         height: 800px;
-        background-color: #2c4674;
+        background-image: linear-gradient(to top, #c8daff, #2c4674 );
     }
     .Text-Conatiner{
         display: flex;
@@ -29,8 +56,8 @@
         height: 30%;
     }
     .Title{
-        font-size: 64px ;
-        font-weight: bold;
+        font-size: 24px ;
+        font-family: "Medium";
         color: #ffff;
     }
     .ConatinerInputs{
@@ -42,6 +69,8 @@
         width: 80%;
     }
     .Input{
+        text-align: center;
+        color: var(--search-orange);
         font-size: 18px;
         font-weight: 500px;
         border-radius: 10px;
@@ -50,13 +79,14 @@
     }
     .Button{
         text-align: center;
-        background-color: #519E8A;
-        color: #ffff;
+        background-color: var(--search-green);
+        color: var(--title-white);
         font-size: 18px;
-        font-weight: 500px;
-        border-radius: 10px;
+        font-family: "Medium";
+        border-radius: 20px;
         padding: 10px;
         width: 30%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     }
     .Button:hover{
         background-color: #3d6e62;
