@@ -1,12 +1,40 @@
+@font-face {
+    font-family: "Bold";
+    src: url("../MEDIA/fonts/Montserrat-Bold.ttf");
+  }
+@font-face {
+    font-family: "Medium";
+    src: url("../MEDIA/fonts/Montserrat-Medium.ttf");
+  }
+@font-face {
+    font-family: "Regular";
+    src: url("../MEDIA/fonts/Montserrat-Regular.ttf");
+  }
+
+
+  :root{
+    --title-blue: #2c4674;
+    --title-white: #ffffff;
+    --home-blue: #2c4674;
+    --home-whiteblue: #c8daff;
+    --search-green: #519e8a;
+    --search-orange: #d1723f;
+    --search-backgreen: #cbe0db;
+    --search-backwhite: #e8dbd4;
+
+  }
 *{
+    font-family: "Regular";
     padding: 0;
-      margin: 0;
-      text-decoration: none;
-      outline: none;
-      border: none;
-      transition: 0.5s;
-    
-    }
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    user-select: none;
+
+
+}
     .Main{
         display: flex;
         justify-content: center;
@@ -41,6 +69,13 @@
         justify-content: center;
         width: 40px;
         height: 40px;
+        transform: translateX(0px);
+
+
+    }
+    .containerbackIcon:hover{
+        transition: tranform 0.4s ease-out;
+        transform: translateX(-10px);
     }
     .backicon{
         background-image: url("./MEDIA/images/1-search/chevron-left.svg");
@@ -48,6 +83,8 @@
         background-size: cover;
         width: 100%;
         height: 100%;
+
+
     }
     .containerburg{
         display: flex;
@@ -78,7 +115,7 @@
         background-size: cover;
         width: 20px;
         height: 20px;
-        position: absolute;
+        position: relative;
         left: 40px;
     }
     .searchinput{
@@ -95,6 +132,7 @@
         justify-content: space-evenly;
         width: 100%;
         height: 10%;
+        user-select: none;
 
     }
     .ButtonDogs{
@@ -107,6 +145,14 @@
         width: 40%;
         border-radius: 50px;
         padding: 10px;
+
+    }
+    .ButtonDogs:hover,
+    .ButtonCat:hover{
+        /* transition: tranform 0.3s ease; */
+        transform: scale(105%); 
+        transition: transform 0.3s ease;
+
     }
     .ButtonCat{
         display: flex;
@@ -118,6 +164,8 @@
         width: 40%;
         border-radius: 50px;
         padding: 10px;
+
+        
     }
     .iconDog{
         background-image: url("./MEDIA/images/1-search/fa-solid_dog_white.svg");
@@ -146,67 +194,136 @@
         font-weight: 500px;
     }
     .ContainerDogs{
-        flex-wrap: wrap;
-        width: 90%;
-        gap: 10px;
+        display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+        width: 100%;
+        gap: 20px;
     }
+    .Conatiner:hover .ConatinerInfo{
+        background-color: var(--search-green);
+    }
+    .Conatiner:hover .cardDog{
+        background-color: var(--title-white);
+    }
+    
     .cardDog{
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 40px;
         background-color: #519e8a;
         height: 250px;
         width: 180px;
+        transition: background-color 0.3s ease;
     }
+   
+
     .ContainerImagem{
+        display: flex;
+        align-items: end;
+        justify-content: center;
         width: 100%;
-        height: 70%;
+        height: 100%;
     }
     .Dog1{
+        background-image: url("./MEDIA/images/1-search/dogs/benji.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 160px;
+        width: 130px;
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+    }
+    .Conatiner:hover .Dog1,
+    .Conatiner:hover .Dog2,
+    .Conatiner:hover .Dog3,
+    .Conatiner:hover .Dog4{
+        transform:  translateY(0px);
+    }
+    .Dog2{
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
         background-image: url("./MEDIA/images/1-search/dogs/alvan.png");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 90%;
-        height: 100%;
+        height: 130px;
+        width: 160px;
+    }
+    .Dog3{
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+        background-image: url("./MEDIA/images/1-search/dogs/karsten.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 130px;
+        width: 160px;
+    }
+    .Dog4{
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+        background-image: url("./MEDIA/images/1-search/dogs/reigner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 140px;
+        width: 100px;
     }
     .ConatinerInfo{
+        z-index: 2;
         display: flex;
         flex-direction: row;
         background-color: #ffff;
         width: 100%;
-        height: 30%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        height: 60%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
+   
     .Info{
+        margin-left: 20px;
         display: flex;
         flex-direction: column;
         justify-content: start;
-        text-align: center;
+        text-align: left;
         width: 50%;
     }
     .Title{
-        font-weight: bold;
+        font-family: "Bold";
         font-size: 24px;
-        color: #2c4672;
+        color: var(--title-blue);
     }
     .Sub-Title{
-        font-size: 14px;
-        color: #2c4672;
+        font-size: 12px;
+        font-family: "Medium";
+        color: var(--title-blue);
+    }
+    .Conatiner:hover .Title {
+        color: var(--title-white);
+    }
+    .Conatiner:hover .Sub-Title {
+        color: var(--title-white);
     }
     .conatinerIcon{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
+        margin-bottom: 20px;
         width: 50%;
 
     }
     .IconSolid{
-        background-image: url("./MEDIA/images/1-search/hearthome-active.svg");
+        background-image: url("./MEDIA/images/1-search/hearthome.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 22px;
+        height: 25px;
 
     }
+    .Conatiner:hover .IconSolid{
+        background-image: url("./MEDIA/images/1-search/hearthome-white.svg");
+    }
+  
