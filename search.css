@@ -35,10 +35,19 @@
 
 
 }
+.Body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
     .Main{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: fixed;
+        top: 0px;
+        
     }
     .body{
         display: flex;
@@ -48,6 +57,15 @@
         width: 414px;
         height: 800px;
         background-color: #cbe0db;
+    }
+    .bodyCat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 414px;
+        height: 800px;
+        background-color: var(--search-backwhite);
     }
     .header{
         display: flex;
@@ -92,6 +110,8 @@
         justify-content: center;
         width: 20px;
         height: 20px;
+        z-index: 6;
+        
     }
     .burger{
         background-image: url("./MEDIA/images/1-search/menu-open.svg");
@@ -135,13 +155,25 @@
         user-select: none;
 
     }
+    .ButtonDogsDog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 40px;
+        background-color: var(--search-green);
+        width: 40%;
+        border-radius: 50px;
+        padding: 10px;
+
+    }
     .ButtonDogs{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: left;
         gap: 40px;
-        background-color: #519e8a;
+        background-color: var(--title-white);
         width: 40%;
         border-radius: 50px;
         padding: 10px;
@@ -154,13 +186,26 @@
         transition: transform 0.3s ease;
 
     }
+    .ButtonCatDog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 40px;
+        background-color: var(--title-white);
+        width: 40%;
+        border-radius: 50px;
+        padding: 10px;
+
+        
+    }
     .ButtonCat{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: left;
         gap: 40px;
-        background-color: #ffff;
+        background-color: var(--search-orange);
         width: 40%;
         border-radius: 50px;
         padding: 10px;
@@ -168,6 +213,14 @@
         
     }
     .iconDog{
+        background-image: url("./MEDIA/images/1-search/fa-solid_dog.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+
+    }
+    .iconDogDog{
         background-image: url("./MEDIA/images/1-search/fa-solid_dog_white.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -175,7 +228,7 @@
         height: 30px;
 
     }
-    .iconcat{
+    .iconcatDog{
         background-image: url("./MEDIA/images/1-search/fa-solid_cat.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -183,13 +236,31 @@
         height: 30px;
 
     }
+    .iconcat{
+        background-image: url("./MEDIA/images/1-search/fa-solid_cat_white.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+
+    }
     .textdog{
-        color: #ffff;
+        color: var(--title-blue);
+        font-size: 18px;
+        font-weight: 500px;
+    }
+    .textdogDog{
+        color: var(--title-white);
+        font-size: 18px;
+        font-weight: 500px;
+    }
+    .textcatDOG{
+        color: var(--title-blue);
         font-size: 18px;
         font-weight: 500px;
     }
     .textcat{
-        color: #2c4672;
+        color: var(--title-white);
         font-size: 18px;
         font-weight: 500px;
     }
@@ -206,12 +277,28 @@
     .Conatiner:hover .cardDog{
         background-color: var(--title-white);
     }
+    .Conatiner:hover .ConatinerInfoCat{
+        background-color: var(--search-orange);
+    }
+    .Conatiner:hover .cardcat{
+        background-color: var(--title-white);
+    }
+  
     
     .cardDog{
         display: flex;
         flex-direction: column;
         border-radius: 40px;
-        background-color: #519e8a;
+        background-color: var(--search-green);
+        height: 250px;
+        width: 180px;
+        transition: background-color 0.3s ease;
+    }
+    .cardcat{
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        background-color: var(--search-orange);
         height: 250px;
         width: 180px;
         transition: background-color 0.3s ease;
@@ -235,6 +322,7 @@
         transform: translateY(20px);
         transition: transform 0.3s ease;
     }
+    
     .Conatiner:hover .Dog1,
     .Conatiner:hover .Dog2,
     .Conatiner:hover .Dog3,
@@ -271,7 +359,60 @@
         height: 140px;
         width: 100px;
     }
+    .Cat1{
+        background-image: url("./MEDIA/images/1-search/cats/ariana.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 140px;
+        width: 170px;
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+    }.Cat2{
+        background-image: url("./MEDIA/images/1-search/cats/remi.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 160px;
+        width: 140px;
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+    }.Cat3{
+        background-image: url("./MEDIA/images/1-search/cats/alex.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 160px;
+        width: 150px;
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+    }.Cat4{
+        background-image: url("./MEDIA/images/1-search/cats/zoe.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 180px;
+        width: 130px;
+        z-index: 1;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+    }
+    .Conatiner:hover .Cat1,
+    .Conatiner:hover .Cat2,
+    .Conatiner:hover .Cat3,
+    .Conatiner:hover .Cat4{
+        transform:  translateY(0px);
+    }
     .ConatinerInfo{
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        background-color: #ffff;
+        width: 100%;
+        height: 60%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .ConatinerInfoCat{
         z-index: 2;
         display: flex;
         flex-direction: row;
@@ -327,3 +468,104 @@
         background-image: url("./MEDIA/images/1-search/hearthome-white.svg");
     }
   
+/* SEARCH Menu CSS */
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.9s ease-in-out ; 
+    transform: translateX(414px);
+    width: 414px;
+    height: 800px;
+    z-index: 6;
+    background-color: var(--search-backgreen);
+    overflow-x: hidden;
+}
+#Itens{
+    display: none;
+}
+#menu:target{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 414px;
+    height: 800px;
+    z-index: 6;
+    background-color: var(--search-backgreen);
+    overflow-x: hidden;
+    transform: translateX(-1px);
+    transition: transform 1.0s ease; 
+    border-radius: 1px solid var(--home-blue);
+}
+.TitleMENU{
+    padding-top: 40px;
+    color:  var(--title-blue);
+    font-size: 24px;
+    font-family: "Medium";
+
+}
+.ButtonMenuHome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 90px;
+    background-color: var(--home-blue);
+    width: 70%;
+    border-radius: 50px;
+    padding: 20px;
+
+}
+.ButtonMenuDog{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 90px;
+    background-color: var(--search-green);
+    width: 70%;
+    border-radius: 50px;
+    padding: 20px;
+
+}
+.ButtonMenuCat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 90px;
+    background-color: var(--search-orange);
+    width: 70%;
+    border-radius: 50px;
+    padding: 20px;
+
+    
+}
+.ConatinerMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.ButtonMenuDog:hover,
+.ButtonMenuHome:hover,
+    .ButtonMenuCat:hover{
+        transform: scale(105%); 
+        transition: transform 0.3s ease;
+
+    }
+
+.IconSolidMenu{
+    background-image: url("./MEDIA/images/1-search/fa-solid_home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+
+}
