@@ -113,7 +113,7 @@
     width: 400px;
     overflow-y: hidden;
     position: absolute;
-    transform: translateY(400px); 
+    /* transform: translateY(400px);  */
 
 }
 .Home-Img2{
@@ -130,7 +130,7 @@
 
 #Img1{
     transition: 0.3S ease;
-    transform: translateY(-100px);
+    /* transform: translateY(-100px); */
 }
 #Img2{
     transform: translateY(0px);
