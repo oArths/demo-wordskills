@@ -46,6 +46,8 @@
         width: 414px;
         height: 800px;
         background-image: linear-gradient(to top, #c8daff, #2c4674 );
+        border-radius: 30px;
+
     }
     .Text-Conatiner{
         display: flex;
