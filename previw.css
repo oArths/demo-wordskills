@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Bold";
+    src: url("../MEDIA/fonts/Montserrat-Bold.ttf");
+  }
+@font-face {
+    font-family: "Medium";
+    src: url("../MEDIA/fonts/Montserrat-Medium.ttf");
+  }
+@font-face {
+    font-family: "Regular";
+    src: url("../MEDIA/fonts/Montserrat-Regular.ttf");
+  }
+
+
+  :root{
+    --title-blue: #2c4674;
+    --title-white: #ffffff;
+    --home-blue: #2c4674;
+    --home-whiteblue: #c8daff;
+    --search-green: #519e8a;
+    --search-orange: #d1723f;
+    --search-backgreen: #cbe0db;
+    --search-backwhite: #e8dbd4;
+
+  }
+*{
+    font-family: "Regular";
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+ 
+
+}
+.Main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Body{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 414px;
+        height: 800px;
+        background-color: var(--search-backgreen);
+        border-radius: 30px;
+}
+.BodyCat{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 414px;
+        height: 800px;
+        background-color: var(--search-backwhite);
+        border-radius: 30px;
+}
+.cardDog{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: var(--search-green);
+    height: 60%;
+    width: 414px;
+    transition: background-color 0.3s ease;
+}
+.cardCat{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: var(--search-orange);
+    height: 60%;
+    width: 414px;
+    transition: background-color 0.3s ease;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.containerbackIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transform: translateX(0px);
+
+
+}
+.containerbackIcon:hover{
+    transition: tranform 0.4s ease-out;
+    transform: translateX(-10px);
+}
+.backicon{
+    background-image: url("./MEDIA/images/2-preview/chevron-left-white.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.Img{
+    height: 414px;
+    width: 414px;
+
+}
+.ConatinerImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+    
+}
+.Dog3{
+    background-image: url("./MEDIA/images/2-preview/karsten-big.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 417px;
+    width: 314px;
+    
+}
+.Cat{
+    background-image: url("./MEDIA/images/2-preview/alex-big.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 417px;
+    width: 314px;
+    
+}
+.ContainercardInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+    position: absolute;
+    /* z-index: 1; */
+    top: 390px;
+    gap: 30px;
+}
+.CardInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.692));
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    gap: 10px;
+}
+.Title{
+    font-family: "Bold";
+    font-size: 16px;
+    color: var(--title-blue);
+}
+.Sub-Title{
+    font-family: "Medium";
+    font-size: 14px;
+    color: var(--title-blue);
+
+}
+.Conatineruser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+    padding: 10px;
+}
+.HedaerInfo{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+.Nome{
+    font-size: 24px;
+    font-family: "Bold";
+    color:  var(--title-blue);
+}
+.Tipo{
+    font-size: 18px;
+    font-family: "Medium";
+    color:  var(--title-blue);
+}
+.user{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+
+}
+.UserImg{
+    background-image: url("./MEDIA/images/2-preview/james.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+
+}
+.UserImg1{
+    background-image: url("./MEDIA/images/2-preview/sophie.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+
+}
+.ButtonCat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--search-green);
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px;
+
+    
+}
+.Button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--search-orange);
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px;
+
+    
+}
+.Button:hover{
+    /* transition: tranform 0.3s ease; */
+    transform: scale(103%); 
+    transition: transform 0.3s ease;
+
+}
+.ButtonCat:hover{
+    /* transition: tranform 0.3s ease; */
+    transform: scale(103%); 
+    transition: transform 0.3s ease;
+
+}
+.textcat{
+    color: var(--title-white);
+    font-size: 18px;
+    font-weight: 500px;
+}
