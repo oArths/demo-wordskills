@@ -46,6 +46,8 @@
     width: 414px;
     height: 800px;
     background-image: linear-gradient(to top, #2c4674, #c8daff );
+    border-radius: 30px;
+
     
 
 
@@ -67,6 +69,7 @@
     border-radius: 100%;
     background-color: var(--title-white);
 }
+
 .RadioConatiner{
     display: flex;
     flex-direction: row;
@@ -104,6 +107,7 @@
     width: 414px;
     position: relative;
     overflow: hidden; 
+    border-radius: 30px;
 }
 .Home-Img1{
     background-image: url("/MEDIA/images/0-home/slide1.png");
@@ -113,7 +117,8 @@
     width: 400px;
     overflow-y: hidden;
     position: absolute;
-    /* transform: translateY(400px);  */
+    transition: transform 0.9s ease;
+    transform: translateY(70px); 
 
 }
 .Home-Img2{
@@ -124,16 +129,11 @@
     width: 414px;
     overflow-y: hidden;
     position: absolute;
+    transition: transform 0.9s ease;
+    transform: translateY(70px); 
+}
+.Home-Img2:target  .Home-Img2{
     transform: translateY(10px); 
-
-}
-
-#Img1{
-    transition: 0.3S ease;
-    /* transform: translateY(-100px); */
-}
-#Img2{
-    transform: translateY(0px);
 }
 
 .ConatinerRigth{
