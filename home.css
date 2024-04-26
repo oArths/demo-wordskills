@@ -35,9 +35,11 @@
 
 }
 .Main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    left: 40%;
+    overflow: hidden;
+    width: 414px;
+    height: 800px;
 }
 .body{
     display: flex;
@@ -47,9 +49,6 @@
     height: 800px;
     background-image: linear-gradient(to top, #2c4674, #c8daff );
     border-radius: 30px;
-
-    
-
 
 }
 .Conatiner{
@@ -90,7 +89,7 @@
 .Title{
     font-family: "Regular";
     font-size: 64px;
-    color: blue;
+    color: var(--title-blue);
 
 }
 .Sub-Title{
@@ -117,7 +116,7 @@
     width: 400px;
     overflow-y: hidden;
     position: absolute;
-    transition: transform 0.9s ease;
+    transition: all 0.9s ease;
     transform: translateY(70px); 
 
 }
@@ -129,12 +128,10 @@
     width: 414px;
     overflow-y: hidden;
     position: absolute;
-    transition: transform 0.9s ease;
+    transition: all 0.9s ease;
     transform: translateY(70px); 
 }
-.Home-Img2:target  .Home-Img2{
-    transform: translateY(10px); 
-}
+
 
 .ConatinerRigth{
     display: flex;
@@ -165,4 +162,12 @@
     background-size: cover;
     width: 50px;
     height: 50px;
+}
+
+#home:target  .Home-Img2{
+    transform: translateY(-0px);
+    
+}
+#menu1:target .Home-Img1{
+    transform: translateY(-0px);
 }
