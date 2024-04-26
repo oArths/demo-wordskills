@@ -35,45 +35,29 @@
 
 
 }
-.Body{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
     .Main{
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
-        position: fixed;
+        justify-content: center;
         top: 0px;
         overflow: hidden;
-
-
-    }
-    .body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        width: 414px;
+        width: 814px;
         height: 800px;
-        background-color: #cbe0db;
-        border-radius: 30px;
-
-
+        
+       
     }
+  
     .bodyCat{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
+        top: 0;
         width: 414px;
         height: 800px;
         background-color: var(--search-backwhite);
         border-radius: 30px;
-
     }
     .bodyDog{
         display: flex;
@@ -106,12 +90,12 @@
         justify-content: center;
         width: 40px;
         height: 40px;
+        transition:  0.9s ease;
         transform: translateX(0px);
 
 
     }
     .containerbackIcon:hover{
-        transition: tranform 0.4s ease-out;
         transform: translateX(-10px);
     }
     .backicon{
@@ -120,8 +104,7 @@
         background-size: cover;
         width: 100%;
         height: 100%;
-         
-
+      
 
 
     }
@@ -132,15 +115,19 @@
         width: 20px;
         height: 20px;
         position: relative;
-        z-index: 9;     
+        z-index: 1000;
+
+             
     }
+   
    
     .burger{
         background-image: url("./MEDIA/images/1-search/menu-open.svg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100%;     
+        height: 100%;  
+            
         
     }
    
@@ -512,7 +499,7 @@
     height: 800px;
     gap: 40px;
     position: relative;
-    z-index: 6;
+    z-index: 1;
     background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.692));
     overflow-x: hidden;
     border-radius: 30px;
@@ -522,13 +509,13 @@
 #menu:target{
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 414px;
     height: 800px;
-    position: relative;
+    gap: 40px;
+    top: 0;
+    position: absolute;
     z-index: 6;
     background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.692));
-    overflow-x: hidden;
     transform: translateX(0px);
     transition: transform 1.0s ease; 
     border-radius: 1px solid var(--home-blue);
