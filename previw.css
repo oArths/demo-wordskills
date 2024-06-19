@@ -38,6 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 .Body{
     display: flex;
@@ -93,12 +94,13 @@
     justify-content: center;
     width: 40px;
     height: 40px;
+    transition:  0.5s ease;
+
     transform: translateX(0px);
 
 
 }
 .containerbackIcon:hover{
-    transition: tranform 0.4s ease-out;
     transform: translateX(-10px);
 }
 .backicon{
