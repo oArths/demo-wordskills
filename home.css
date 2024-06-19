@@ -37,9 +37,11 @@
 .Main{
     position: relative;
     left: 40%;
+    top: 60px;
     overflow: hidden;
     width: 414px;
     height: 800px;
+    
 }
 .body{
     display: flex;
