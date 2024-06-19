@@ -35,15 +35,20 @@
 
 
 }
+.Body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
     .Main{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        top: 0px;
-        /* overflow: hidden; */
-        width: 814px;
-        height: 800px;
+        height: 100vh;
+
         
        
     }
@@ -53,12 +58,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        position: relative;
-        top: 0;
         width: 414px;
         height: 800px;
         background-color: var(--search-backwhite);
         border-radius: 30px;
+        position: relative;
+        left: 200px;
+
     }
     .bodyDog{
         display: flex;
@@ -69,6 +75,9 @@
         height: 800px;
         background-color: var(--search-backgreen);
         border-radius: 30px;
+        position: relative;
+        left: 200px;
+        
 
     }
     .header{
@@ -91,7 +100,7 @@
         justify-content: center;
         width: 40px;
         height: 40px;
-        transition:  0.9s ease;
+        transition:  0.5s ease;
         transform: translateX(0px);
 
 
@@ -109,43 +118,10 @@
 
 
     }
-    .containerburg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 20px;
-        height: 20px;       
-    }
-   
-    .burger{
-        opacity: 1;
-        background-image: url("./MEDIA/images/1-search/menu-open.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        z-index: 1000;
-        
-    }
-    .burgerClose{
-       opacity: 0;
-        background-image: url("./MEDIA/images/1-search/menu-close.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        position: relative;
-        z-index: 1001;
-            
-        
-    }
-    .containerburg:target .burger {
-        opacity: 0;
-    }
     
-    #containerburg:target .burgerClose {
-        opacity: 1;
-    }
+   
+  
+ 
   
    
     .ConatinerInput{
@@ -425,7 +401,7 @@
         background-image: url("./MEDIA/images/1-search/cats/zoe.png");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 180px;
+        height: 160px;
         width: 130px;
         z-index: 1;
         transform: translateY(20px);
@@ -503,65 +479,73 @@
         background-image: url("./MEDIA/images/1-search/hearthome-white.svg");
     }
   
-/* SEARCH Menu CSS */
-@keyframes Menu {
-    0%{
-        /* visibility: hidden; */
-        transform: translateX(414px);
-    }
-    50%{
-        /* opacity: 50%; */
-        /* transform: translateX(214px); */
-    }
-    100%{
-        /* opacity: 100%; */
-        transform: translateX(0px);
-    }
-    
-}
-#menu{
+
+.menu{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateX(414px);
+    transform: translateX(214px);
+    opacity: 0;
     width: 414px;
     height: 800px;
     gap: 40px;
-    position: relative;
     z-index: 1;
     background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.692));
-    visibility: hidden;
     border-radius: 30px;
     border: 1px solid var(--home-blue);
 }
 
 #menu:target{
+    opacity: 1;
     display: flex;
     flex-direction: column;
     width: 414px;
     height: 800px;
     gap: 40px;
-    top: 0;
-    position: absolute;
-    visibility: visible;
-    opacity: 1;
     z-index: 6;
     background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.692));
-    transform: translateX(0px);
-    border: 1px solid var(--home-blue);
+    transform: translateX(-214px);
     border-radius: 30px;
     border: 1px solid var(--home-blue);
-    animation: Menu 1s ease;
     
 }
-#menu:target .burger{
+.containerburg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 20px;       
+}
+.burger{
+    opacity: 1;
+    background-image: url("./MEDIA/images/1-search/menu-open.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    
+}
+.burgerClose{
+    opacity: 0;
     background-image: url("./MEDIA/images/1-search/menu-close.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%; 
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1001;
+        
     
+}
+
+.containerburg:target .burger {
+    opacity: 0;
+}
+
+.containerburg:target .burgerClose {
+    opacity: 1;
 }
 
 .TitleMENU{
