@@ -1,1 +1,1 @@
-# word-skills
+# demo-wordskills
